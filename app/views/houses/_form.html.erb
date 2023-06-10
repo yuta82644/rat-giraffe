@@ -11,5 +11,20 @@
   <%= form.label :note, '備考' %>
   <%= form.text_area :note %>
 
+
+<% index = 0 %>
+<%= form.fields_for :stations do |station| %>
+  <h2>最寄り駅<%= index + 1%></h2> 
+
+  <%= station.label :route_name,'路線名' %>
+  <%= station.text_field :route_name %>
+  <%= station.label :station_name,'駅名' %>
+  <%= station.text_field :station_name %>
+  <%= station.label :time,'徒歩分数' %>
+  <%= station.text_field :time %>
+
+<% index+= 1 %>
+<% end %>
+
   <%= form.submit '登録' %>
 <% end %>
