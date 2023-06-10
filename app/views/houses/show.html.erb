@@ -1,0 +1,11 @@
+<h1>関覧</h1>
+
+<p>物件名：<%= @house.house_name %></p>
+<p>賃料：<%= @house.price %></p>
+<p>住所: <%= @house.address %></p>
+<p>築年数: <%= @house.age %></p>
+<p>備考 <%= @house.note %></p>
+
+<%= link_to '編集', edit_house_path(@house.id) %>
+<%= link_to '戻る', houses_path %>
+
