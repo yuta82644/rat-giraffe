@@ -1,0 +1,28 @@
+.field_house {
+  margin-bottom: 60px;
+  margin-left: 80px;
+  padding-bottom: 60px;
+  /* border-bottom: 2px solid; */
+}
+
+.text {
+  font-weight: bold;
+}
+
+.field_station {
+  margin-bottom: 60px;
+  margin-left: 80px;
+}
+
+.btn {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+a {
+  color: black;
+}
+
+.border {
+  border-bottom: 2px solid;
+}
